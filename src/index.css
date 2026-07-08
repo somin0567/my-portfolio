@@ -1,0 +1,71 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #4CB98C;
+  --color-primary-light: #7ED1AC;
+  --color-primary-dark: #388F6C;
+
+  /* Secondary Colors */
+  --color-secondary: #A9CBEA;
+  --color-accent: #F5C518;
+
+  /* Background Colors */
+  --color-bg-primary: #FAF4E3;
+  --color-bg-secondary: #F1E8D0;
+
+  /* Text Colors */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #2B2B2B;
+  --color-text-muted: #8A8577;
+
+  /* Interactive Colors */
+  --color-button-primary: #4CB98C;
+  --color-button-hover: #388F6C;
+  --color-link: #3B7DC4;
+  --color-link-hover: #2F638F;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #1E1B15;
+    --color-bg-secondary: #29251C;
+
+    --color-text-primary: #F5F1E6;
+    --color-text-secondary: #D8D3C4;
+    --color-text-muted: #8F8A79;
+
+    --color-primary: #5FCB9C;
+    --color-primary-light: #7ED1AC;
+    --color-primary-dark: #4CB98C;
+
+    --color-secondary: #6E93B8;
+    --color-accent: #F5C518;
+
+    --color-button-primary: #5FCB9C;
+    --color-button-hover: #7ED1AC;
+    --color-link: #7FB2E8;
+    --color-link-hover: #A9CBEA;
+  }
+}
+
+/* CSS 초기화 */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
