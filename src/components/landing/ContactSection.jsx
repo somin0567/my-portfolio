@@ -26,7 +26,7 @@ function ContactSection() {
       description="여기는 Contact 섹션입니다. 연락처, SNS, 간단한 메시지 폼이 들어갈 예정입니다."
       bgColor="background.paper"
     >
-      <Stack direction="row" spacing={1} justifyContent="center" sx={{ mt: 3 }}>
+      <Stack direction="row" spacing={1} sx={{ mt: 3, justifyContent: 'center' }}>
         {SNS_ICONS.map(({ icon: Icon, label }) => (
           <IconButton
             key={label}
